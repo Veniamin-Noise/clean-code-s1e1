@@ -34,6 +34,7 @@ var createNewTaskElement = function(taskString){
 
     label.innerText = taskString;
     label.className = "task";
+    label.className = "task";
 
     //Each elements, needs appending
     checkBox.type = "checkbox";
@@ -82,6 +83,7 @@ var editTask = function(){
 
     var listItem = this.parentNode;
 
+    var editInput = listItem.querySelector("input[type=text]");
     var editInput = listItem.querySelector("input[type=text]");
     var label = listItem.querySelector("label");
     var editBtn = listItem.querySelector(".edit");
